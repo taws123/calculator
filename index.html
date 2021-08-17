@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- tailwind stylesheet -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(images/bg.gif);
+        }
+
+
+
+        #top-text {
+            position: absolute;
+            top: 0;
+            left: 2%;
+            font-size: 13px;
+        }
+
+        .button {
+            border-radius: 50%;
+        }
+
+        .box,
+        #input-field {
+            width: 21rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="h-16 text-3xl font-medium text-center pt-3 mx-auto bg-green-300 text-white">Calculator</section>
+    </header>
+    <main>
+        <section class="flex justify-center" id="main-section">
+            <div class="box mt-8 flex flex-col items-center border bg-gray-100 p-3">
+                <div class="relative">
+                    <input type="text" class="border h-16 pt-3 rounded text-3xl px-3 bg-red-200" disabled value='0'
+                        id="input-field">
+                    <span id="top-text" class="bg-white rounded px-1"></span>
+                </div>
+                <div class="grid grid-cols-4 gap-6 mt-4 " id="buttons">
+                    <div class="w-16 h-16 bg-blue-300 text-4xl flex button items-center justify-center text-white">
+                        1
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        2
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        3
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        C
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        4
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        5
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        6
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        +
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        7
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        8
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        9
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        -
+                    </div>
+                    <div class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center text-white">
+                        0
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center items-center text-white ">
+                        =
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center items-center text-white ">
+                        *
+                    </div>
+                    <div
+                        class="w-16 h-16 bg-blue-300  text-4xl flex button items-center justify-center items-center text-white ">
+                        /
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
